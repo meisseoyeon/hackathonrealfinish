@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../allstyle.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="iphone-frame">
+    <div class="전체">
+      <div class="채널배경사진범위">
+        <img src="leoj_bg.png" />
+        <div class="검정그라데이션"></div>
+      </div>
+      <div class="채널프로필사진범위"><img src="leoj_pro.jpg" /></div>
+      <div class="채널기본정보범위">
+        <div class="채널이름폰트">LeoJ Makeup</div>
+        <button class="별" id="별버튼" onclick="toggleStar()">
+          <img id="star" src="빈별.png" />
+        </button>
+        <div class="구독자수폰트">구독자 수 118만명</div>
+        <div class="좋아요비율폰트">좋아요 87%</div>
+        <div class="리뷰개수폰트">리뷰 98개</div>
+      </div>
+      <div class="채널소개범위">
+        <div class="채널정보폰트">채널 정보</div>
+        <div class="소개글범위">
+          레페리 뷰티 엔테테인먼트 소속 뷰티 크리에이터이자 메이크업 아티스트.
+          주력 콘텐츠는 다양한 메이크업, 화장품 리뷰, 일상 브이로그.
+        </div>
+      </div>
+
+      <div id="div1">
+        <div class="좋아요아쉬워요범위" style="left: 19px; top: 407px">
+          <div class="좋아요아쉬워요테두리"></div>
+          <button class="좋아요버튼">
+            <div class="좋아요폰트" style="left: 58px">좋아요 87%</div>
+          </button>
+          <button class="아쉬워요버튼" id="showDiv2Button">
+            <div class="아쉬워요폰트" style="left: 55px">아쉬워요 13%</div>
+          </button>
+        </div>
+        <div class="참여수아이콘"><img src="icon-nav-arrow-down.png" /></div>
+        <div class="참여수폰트">127명 참여</div>
+        <div class="좋아요평가리스트요약" id="goodmini">
+          <div class="평가테두리">
+            <div class="평가테두리폰트">👍🏻 영상 퀄리티가 좋아요</div>
+            <span class="평가테두리숫자폰트">98%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 41px">
+            <div class="평가테두리폰트">⭐️ 정보가 도움이 돼요</div>
+            <span class="평가테두리숫자폰트">86%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 82px">
+            <div class="평가테두리폰트">😄 콘텐츠가 재밌어요</div>
+            <span class="평가테두리숫자폰트">85%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 123px">
+            <div class="평가테두리폰트">💡 믿을만한 정보를 알려줘요</div>
+            <span class="평가테두리숫자폰트">56%</span>
+            <div class="bar"></div>
+          </div>
+          <button class="더보기버튼" id="morebtn">
+            <img src="더보기.png" />
+          </button>
+
+          <button class="모든리뷰버튼" style="cursor: pointer;" onclick="location.href='../검색/five.html'">
+            <div class="모든리뷰폰트">모든 리뷰</div>
+            <img class="모든리뷰버튼이미지" src="모든리뷰버튼.png" />
+          </button>
+          <button class="리뷰1" style="cursor: pointer;" onclick="location.href='../검색/six.html'">
+            <div class="이용자프로필">
+              <img src="파란원.png" />
+              <div class="이용자임티폰트">🐣</div>
+            </div>
+            <div class="이용자이름폰트">닭둘기</div>
+            <div class="하트범위">
+              <div class="하트이미지"><img src="하트.png" /></div>
+              <div class="하트수폰트">32</div>
+            </div>
+            <div class="댓글범위">
+              <div class="댓글이미지"><img src="댓글아이콘.png" /></div>
+              <div class="댓글수폰트">4</div>
+            </div>
+            <div class="스크랩범위">
+              <div class="스크랩이미지"><img src="스크랩아이콘.png" /></div>
+              <div class="스크랩폰트">0</div>
+            </div>
+            <div class="시간">방금 전</div>
+            <div class="리뷰본문짤림">
+              뷰티 추천템 믿고 사는 레오제이. 본업 관련된 영상도 더 많이
+              올려주면 좋겠음! 찐친 콘텐츠는 항상 재밌고 ㅋㅋ...
+            </div>
+            <div class="좋아요1">영상 퀄리티가 좋아요</div>
+            <div class="좋아요1" style="left: 142px">콘텐츠가 재밌어요</div>
+            <div class="좋아요2">+2</div>
+          </button>
+        </div>
+
+        <div class="좋아요평가리스트펼침" id="goodlarge" style="display: none">
+          <div class="평가테두리">
+            <div class="평가테두리폰트">👍🏻 영상 퀄리티가 좋아요</div>
+            <span class="평가테두리숫자폰트">98%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 41px">
+            <div class="평가테두리폰트">⭐️ 정보가 도움이 돼요</div>
+            <span class="평가테두리숫자폰트">86%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 82px">
+            <div class="평가테두리폰트">😄 콘텐츠가 재밌어요</div>
+            <span class="평가테두리숫자폰트">85%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 123px">
+            <div class="평가테두리폰트">💡 믿을만한 정보를 알려줘요</div>
+            <span class="평가테두리숫자폰트">56%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 164px">
+            <div class="평가테두리폰트">🏃🏻‍♀️ 트렌드 반영이 빨라요</div>
+            <span class="평가테두리숫자폰트">55%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 205px">
+            <div class="평가테두리폰트">🎥 시청 길이가 적당해요</div>
+            <span class="평가테두리숫자폰트">45%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 246px">
+            <div class="평가테두리폰트">
+              🌞️ 업데이트가 정기적으로 이뤄져요
+            </div>
+            <span class="평가테두리숫자폰트">43%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 287px">
+            <div class="평가테두리폰트">🥰 팬이 됐어요</div>
+            <span class="평가테두리숫자폰트">12%</span>
+            <div class="bar"></div>
+          </div>
+          <button class="모든리뷰버튼" style="top: 376px" style="cursor: pointer;" onclick="location.href='../검색/five.html'">
+            <div class="모든리뷰폰트">모든 리뷰</div>
+            <img class="모든리뷰버튼이미지" src="모든리뷰버튼.png" />
+          </button>
+          <button class="리뷰1" style="top: 413px" style="cursor: pointer;" onclick="location.href='../검색/six.html'">
+            <div class="이용자프로필">
+              <img src="파란원.png" />
+              <div class="이용자임티폰트">🐣</div>
+            </div>
+            <div class="이용자이름폰트">닭둘기</div>
+            <div class="하트범위">
+              <div class="하트이미지"><img src="하트.png" /></div>
+              <div class="하트수폰트">32</div>
+            </div>
+            <div class="댓글범위">
+              <div class="댓글이미지"><img src="댓글아이콘.png" /></div>
+              <div class="댓글수폰트">4</div>
+            </div>
+            <div class="스크랩범위">
+              <div class="스크랩이미지"><img src="스크랩아이콘.png" /></div>
+              <div class="스크랩폰트">0</div>
+            </div>
+            <div class="시간">방금 전</div>
+            <div class="리뷰본문짤림">
+              뷰티 추천템 믿고 사는 레오제이. 본업 관련된 영상도 더 많이
+              올려주면 좋겠음! 찐친 콘텐츠는 항상 재밌고 ㅋㅋ...
+            </div>
+            <div class="좋아요1">영상 퀄리티가 좋아요</div>
+            <div class="좋아요1" style="left: 142px">콘텐츠가 재밌어요</div>
+            <div class="좋아요2">+2</div>
+          </button>
+          <div class="하단바" style="
+                position: absolute;
+                width: 100%;
+                top: 587px;
+                background: none;
+              "></div>
+        </div>
+      </div>
+      <div id="div2" style="display: none">
+        <div class="좋아요아쉬워요범위" style="left: 19px; top: 407px">
+          <div class="좋아요아쉬워요테두리"></div>
+          <button class="아쉬워요버튼" id="showDiv1Button" style="left: 0px">
+            <div class="좋아요폰트" style="left: 58px; color: #161616">
+              좋아요 87%
+            </div>
+          </button>
+          <button class="좋아요버튼" style="left: 172px">
+            <div class="아쉬워요폰트" style="left: 55px; color: white">
+              아쉬워요 13%
+            </div>
+          </button>
+        </div>
+        <div class="참여수아이콘"><img src="icon-nav-arrow-down.png" /></div>
+        <div class="참여수폰트">127명 참여</div>
+        <div class="좋아요평가리스트요약" id="badmini">
+          <div class="평가테두리">
+            <div class="평가테두리폰트">😨 과장된 내용이 있어요</div>
+            <span class="평가테두리숫자폰트">20%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 41px">
+            <div class="평가테두리폰트">📹 광고가 지나치게 많아요</div>
+            <span class="평가테두리숫자폰트">19%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 82px">
+            <div class="평가테두리폰트">😳 현실성이 떨어져요</div>
+            <span class="평가테두리숫자폰트">8%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 123px">
+            <div class="평가테두리폰트">🙅🏻‍♀️ 거짓된 정보를 알려줘요</div>
+            <span class="평가테두리숫자폰트">0%</span>
+            <div class="bar"></div>
+          </div>
+          <button class="더보기버튼" id="badmorebtn">
+            <img src="더보기.png" />
+          </button>
+
+          <button class="모든리뷰버튼" style="cursor: pointer;" onclick="location.href='../검색/five.html'">
+            <div class="모든리뷰폰트">모든 리뷰</div>
+            <img class="모든리뷰버튼이미지" src="모든리뷰버튼.png" />
+          </button>
+          <button class="리뷰1" style="cursor: pointer;" onclick="location.href='../검색/six.html'">
+            <div class="이용자프로필">
+              <img src="파란원.png" />
+              <div class="이용자임티폰트">🐣</div>
+            </div>
+            <div class="이용자이름폰트">닭둘기</div>
+            <div class="하트범위">
+              <div class="하트이미지"><img src="하트.png" /></div>
+              <div class="하트수폰트">32</div>
+            </div>
+            <div class="댓글범위">
+              <div class="댓글이미지"><img src="댓글아이콘.png" /></div>
+              <div class="댓글수폰트">4</div>
+            </div>
+            <div class="스크랩범위">
+              <div class="스크랩이미지"><img src="스크랩아이콘.png" /></div>
+              <div class="스크랩폰트">0</div>
+            </div>
+            <div class="시간">방금 전</div>
+            <div class="리뷰본문짤림">
+              뷰티 추천템 믿고 사는 레오제이. 본업 관련된 영상도 더 많이
+              올려주면 좋겠음! 찐친 콘텐츠는 항상 재밌고 ㅋㅋ...
+            </div>
+            <div class="좋아요1">영상 퀄리티가 좋아요</div>
+            <div class="좋아요1" style="left: 142px">콘텐츠가 재밌어요</div>
+            <div class="좋아요2">+2</div>
+          </button>
+        </div>
+
+        <div class="좋아요평가리스트펼침" id="badlarge" style="display: none">
+          <div class="평가테두리">
+            <div class="평가테두리폰트">😨 과장된 내용이 있어요</div>
+            <span class="평가테두리숫자폰트">20%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 41px">
+            <div class="평가테두리폰트">📹 광고가 지나치게 많아요</div>
+            <span class="평가테두리숫자폰트">19%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 82px">
+            <div class="평가테두리폰트">😳 현실성이 떨어져요</div>
+            <span class="평가테두리숫자폰트">8%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 123px">
+            <div class="평가테두리폰트">🙅🏻‍♀️ 거짓된 정보를 알려줘요</div>
+            <span class="평가테두리숫자폰트">0%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 164px">
+            <div class="평가테두리폰트">🤯 이해가 잘 안돼요</div>
+            <span class="평가테두리숫자폰트">0%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 205px">
+            <div class="평가테두리폰트">👩🏻‍❤️‍💋‍👨🏻 선정적인 내용이 있어요</div>
+            <span class="평가테두리숫자폰트">0%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="평가테두리" style="top: 246px">
+            <div class="평가테두리폰트">
+              💨 장면 전환이 너무 빨라요 or 느려요
+            </div>
+            <span class="평가테두리숫자폰트">0%</span>
+            <div class="bar"></div>
+          </div>
+
+          <button class="모든리뷰버튼" style="top: 335px" style="cursor: pointer;" onclick="location.href='../검색/five.html'">
+            <div class="모든리뷰폰트">모든 리뷰</div>
+            <img class="모든리뷰버튼이미지" src="모든리뷰버튼.png" />
+          </button>
+          <button class="리뷰1" style="top: 372px" style="cursor: pointer;" onclick="location.href='../검색/six.html'">
+            <div class="이용자프로필">
+              <img src="파란원.png" />
+              <div class="이용자임티폰트">🐣</div>
+            </div>
+            <div class="이용자이름폰트">닭둘기</div>
+            <div class="하트범위">
+              <div class="하트이미지"><img src="하트.png" /></div>
+              <div class="하트수폰트">32</div>
+            </div>
+            <div class="댓글범위">
+              <div class="댓글이미지"><img src="댓글아이콘.png" /></div>
+              <div class="댓글수폰트">4</div>
+            </div>
+            <div class="스크랩범위">
+              <div class="스크랩이미지"><img src="스크랩아이콘.png" /></div>
+              <div class="스크랩폰트">0</div>
+            </div>
+            <div class="시간">방금 전</div>
+            <div class="리뷰본문짤림">
+              뷰티 추천템 믿고 사는 레오제이. 본업 관련된 영상도 더 많이
+              올려주면 좋겠음! 찐친 콘텐츠는 항상 재밌고 ㅋㅋ...
+            </div>
+            <div class="좋아요1">영상 퀄리티가 좋아요</div>
+            <div class="좋아요1" style="left: 142px">콘텐츠가 재밌어요</div>
+            <div class="좋아요2">+2</div>
+          </button>
+          <div class="하단바" style="
+                position: absolute;
+                width: 100%;
+                top: 546px;
+                background: none;
+              "></div>
+        </div>
+      </div>
+
+      <button class="글쓰기버튼" onclick="location.href='four.html'">
+        <img src="연필.png" />
+      </button>
+      <div class="하단바" style="position: absolute; top: 936px; background: none"></div>
+
+      <div class="하단바">
+        <div class="하단바선" style="top: 0px"></div>
+        <button class="하단바커뮤니티구역" style="cursor: pointer;" onclick="location.href='../commu/commu.html'">
+          <div class="하단바커뮤니티이미지">
+            <img src="../images/하단바커뮤니티.svg" />
+          </div>
+          <div class="하단바폰트">커뮤니티</div>
+        </button>
+        <button class="하단바홈구역" style="cursor: pointer;" onclick="location.href='../home/home.html'">
+          <div class="하단바홈이미지">
+            <img src="../images/하단바홈선택.svg" />
+          </div>
+          <div class="하단바폰트" style="color: #3a94cb">홈</div>
+        </button>
+        <button class="하단바마이페이지구역" style="cursor: pointer;" onclick="location.href='../mypage/mypage.html'">
+          <div class="하단바마이페이지이미지">
+            <img src="../images/하단바마이페이지.svg" />
+          </div>
+          <div class="하단바폰트">마이페이지</div>
+        </button>
+        <div class="하단바선" style="bottom: 0px"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // 별바꾸기
+    let isStarFilled = false; // 초기값: 빈 별
+
+    function toggleStar() {
+      const starButton = document.getElementById("별버튼");
+      const starImage = document.getElementById("star");
+
+      if (isStarFilled) {
+        starImage.src = "빈별.png"; // 빈 별로 변경
+      } else {
+        starImage.src = "꽉찬별.png"; // 꽉찬 별로 변경
+      }
+
+      isStarFilled = !isStarFilled; // 상태 토글
+    }
+
+    // 좋아요아쉬워요바뀌는거
+    document
+      .getElementById("showDiv2Button")
+      .addEventListener("click", function () {
+        var div1 = document.getElementById("div1");
+        var div2 = document.getElementById("div2");
+        var showDiv1Button = document.getElementById("showDiv1Button");
+        var showDiv2Button = document.getElementById("showDiv2Button");
+
+        div1.style.display = "none";
+        div2.style.display = "block";
+        showDiv1Button.style.display = "block";
+        showDiv2Button.style.display = "none";
+      });
+
+    document
+      .getElementById("showDiv1Button")
+      .addEventListener("click", function () {
+        var div1 = document.getElementById("div1");
+        var div2 = document.getElementById("div2");
+        var showDiv1Button = document.getElementById("showDiv1Button");
+        var showDiv2Button = document.getElementById("showDiv2Button");
+
+        div1.style.display = "block";
+        div2.style.display = "none";
+        showDiv1Button.style.display = "none";
+        showDiv2Button.style.display = "block";
+      });
+
+    //좋아요더보기누르면 켜지는거
+    const morebtn = document.getElementById("morebtn");
+    const goodmini = document.getElementById("goodmini");
+    const goodlarge = document.getElementById("goodlarge");
+
+    morebtn.addEventListener("click", () => {
+      goodmini.style.display = "none";
+      goodlarge.style.display = "block";
+    });
+
+    //좋아요더보기누르면 켜지는거
+    const badmorebtn = document.getElementById("badmorebtn");
+    const badmini = document.getElementById("badmini");
+    const badlarge = document.getElementById("badlarge");
+
+    badmorebtn.addEventListener("click", () => {
+      badmini.style.display = "none";
+      badlarge.style.display = "block";
+    });
+
+    // 페이지 로드 후 3초 후에 실행될 함수
+    function delayedFunction() {
+      // 숫자에맞춰서 배경색 그라데이션 변화
+      const spans = document.querySelectorAll("span");
+      const bars = document.querySelectorAll(".bar");
+
+      spans.forEach((span, index) => {
+        const value = parseInt(span.textContent);
+        bars[index].style.width = value + "%";
+      });
+      console.log("Delayed function executed after 3 seconds.");
+    }
+
+    // 페이지 로드 시 호출
+    window.onload = function () {
+      // 3초 후에 delayedFunction 함수 실행
+      setTimeout(delayedFunction, 5);
+    };
+  </script>
+</body>
+
+</html>

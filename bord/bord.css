@@ -1,0 +1,337 @@
+main {
+  width: 340px;
+  height: 48px;
+  left: 24px;
+  top: 124px;
+  position: absolute;
+}
+div.동그라미 {
+  width: 48px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #8bbbd9;
+  border-radius: 9999px;
+}
+p.닉네임 {
+  width: 115px;
+  left: 54px;
+  top: 3px;
+  position: absolute;
+  color: #161616;
+  font-size: 19px;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 26.22px;
+  word-wrap: break-word;
+}
+p.시간 {
+  width: 104px;
+  left: 55px;
+  top: 29px;
+  position: absolute;
+  color: #777777;
+  font-size: 10px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 13.8px;
+  word-wrap: break-word;
+}
+p.icon {
+  width: 48px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+  color: #515151;
+  font-size: 35px;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 48.3px;
+  word-wrap: break-word;
+}
+/*article*/
+article {
+  width: 366px;
+  height: 91px;
+  left: 24px;
+  top: 187px;
+  position: absolute;
+}
+article p {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  color: #161616;
+  font-size: 19px;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 26.22px;
+  word-wrap: break-word;
+}
+p.내용 {
+  width: 366px;
+  left: 0px;
+  top: 31px;
+  position: absolute;
+  color: #161616;
+  font-size: 14px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 18.76px;
+  word-wrap: break-word;
+}
+article span {
+  width: 300px;
+  height: 15px;
+  left: 1px;
+  top: 76px;
+  position: absolute;
+  color: #999999;
+  font-size: 10px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 13.8px;
+  word-wrap: break-word;
+}
+/*요소*/
+.하트 {
+  width: 14.59px;
+  height: 13px;
+  left: 27px;
+  top: 292px;
+  position: absolute;
+  border: none;
+}
+.댓 {
+  width: 13px;
+  height: 13px;
+  left: 70px;
+  top: 292px;
+  position: absolute;
+  border: none;
+}
+.별 {
+  width: 13px;
+  height: 12.35px;
+  left: 104px;
+  top: 292px;
+  position: absolute;
+
+  border: none;
+}
+.숫자 {
+  left: 45.88px;
+  top: 289px;
+  position: absolute;
+  color: #212121;
+  font-size: 14px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 19.32px;
+  word-wrap: break-word;
+}
+
+/*댓글*/
+section {
+  width: 368px;
+  height: 66px;
+  left: 22px;
+  top: 375px;
+  position: absolute;
+}
+section span {
+  left: 37px;
+  top: 6px;
+  position: absolute;
+  color: #161616;
+  font-size: 12px;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 16.56px;
+  word-wrap: break-word;
+}
+section p {
+  width: 365px;
+  left: 3px;
+  top: 34px;
+  position: absolute;
+  color: #161616;
+  font-size: 12px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 15.6px;
+  word-wrap: break-word;
+}
+section span.icon {
+  width: 30px;
+  height: 30px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+  color: #515151;
+  font-size: 20px;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 27.6px;
+  word-wrap: break-word;
+}
+.동그라미2 {
+  width: 29px;
+  height: 29px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #6badd5;
+  border-radius: 9999px;
+}
+.input-container {
+  width: 354px;
+  height: 42px;
+  left: 20px;
+  bottom: 81px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #87ceeb;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+/* 입력 칸 스타일 */
+input {
+  padding: 5px;
+  width: 300px;
+  border: none;
+  outline: none;
+  color: #808080;
+  font-size: 14px;
+  font-family: Pretendard;
+  font-weight: 500;
+}
+input::placeholder {
+  left: 25px;
+  top: 11px;
+  position: absolute;
+  color: #808080;
+  font-size: 14px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 19.32px;
+  word-wrap: break-word;
+}
+/* 버튼 스타일 */
+.input-container button {
+  width: 50px;
+  height: 28px;
+  left: 289px;
+  top: 7px;
+  position: absolute;
+  background: #8bbbd9;
+  border-color: #8bbbd9;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+}
+
+.custom-btn-group .btn {
+  width: 173px;
+  height: 37px;
+  left: 20px;
+  top: 321px;
+  position: absolute;
+  background-color: #6badd5;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 19.32px;
+  word-wrap: break-word;
+  line-height: 19.32px;
+}
+/*tie이야기*/
+article.Tie이야기 {
+  width: 390px;
+  height: 204px;
+  left: 0px;
+  top: 119px;
+  position: absolute;
+}
+img.leoj {
+  width: 390px;
+  height: 207px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+h4.주제 {
+  width: 390px;
+  left: 28px;
+  top: 341px;
+  position: absolute;
+  color: #262626;
+  font-size: 19px;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 26.22px;
+  word-wrap: break-word;
+}
+.동글 {
+  width: 48px;
+  height: 24px;
+  left: 28px;
+  top: 372px;
+  position: absolute;
+  background: #d7eaf6;
+  border-radius: 14px;
+}
+.동글 p {
+  left: 10px;
+  top: 4px;
+  position: absolute;
+  color: #595959;
+  font-size: 13px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 17.42px;
+  word-wrap: break-word;
+}
+span.장문 {
+  width: 340px;
+  left: 28px;
+  top: 420px;
+  position: absolute;
+  color: #161616;
+  font-size: 14px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 18.76px;
+  word-wrap: break-word;
+}
+span.강조 {
+  left: 28px;
+  top: 647px;
+  position: absolute;
+  color: #262626;
+  font-size: 16px;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 22.08px;
+  word-wrap: break-word;
+}
+span.하늘강조 {
+  left: 28px;
+  top: 773px;
+  position: absolute;
+  color: #6badd5;
+  font-size: 19px;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 26.22px;
+  word-wrap: break-word;
+}

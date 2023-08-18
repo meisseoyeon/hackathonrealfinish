@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../allstyle.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="iphone-frame">
+    <div class="전체">
+      <div class="샵">#</div>
+      <input class="채널입력" id="post-title" type="text" name="제목" placeholder="채널 및 계정 명 입력" />
+      <button class="x" onClick="history.back();"><img src="x.png" /></button>
+      <div class="검정가로줄"></div>
+      <select class="카테고리선택" aria-label="카테고리">
+        <option value="1">유튜브</option>
+        <option value="2">틱톡</option>
+        <option value="3">인스타그램</option>
+      </select>
+      <textarea name="내용" class="리뷰작성란" id="post-content" rows="4" cols="50"
+        placeholder="유튜브 채널에 대한 리뷰 작성해주세요.&#13;&#10;구체적일수록 많은 분들에게 도움이 될 거예요."></textarea>
+      <button class="리뷰작성주의사항" id="showAlert">
+        <div class="리뷰작성주의폰트">리뷰 작성 유의사항</div>
+      </button>
+
+      <div class="overlay" id="overlay">
+        <div class="alert-box" id="alertBox">
+          <div class="리뷰경고창제목">리뷰 작성 유의사항</div>
+          <div class="리뷰경고창부제">
+            Tie 앱은 현재 쏟아지는 SNS 콘텐츠들 속에서 서로의 후기를 통한 좋은
+            콘텐츠 정보를 제공하고 추천합니다.<br />서로에게 도움이 되는
+            공간이 될 수 있도록 리뷰 작성 시, <br />유의 사항을 준수해
+            주세요.<br /><br />
+          </div>
+          <div class="리뷰경고창부부제">
+            • 허위 정보, 사실을 작성한 경우<br />
+            • 채널 및 계정/특정 주제에 무관한 내용이나 문자의 반복, <br />
+            &nbsp; &nbsp;구체적이지 않은 리뷰를 작성한 경우<br />
+            • 욕설, 비방, 명예훼손을 포함한 내용이 있는 경우<br />
+            • 타인의 권리, 명예, 신용, 기타 등을 침해하는 경우<br />
+            • 불법적인 활동이나 상업적 거래 등 커뮤니티 운영 목적에 <br />
+            &nbsp; &nbsp;어울리지 않는 광고성 리뷰를 작성한 경우
+          </div>
+          <div class="리뷰경고창마지막">
+            리뷰 작성 유의사항을 위반한 경우, 통보 없이 리뷰를 숨김처리 하거나
+            회원의 리뷰 작성 권한을 중지/해지할 수 있습니다.
+          </div>
+          <div class="리뷰경고창가로줄"></div>
+          <button class="리뷰경고창확인버튼" id="closeAlert">확인</button>
+        </div>
+      </div>
+
+      <div class="키워드문장평가하기">키워드 문장 평가하기</div>
+      <div class="한개">(1개~5개)</div>
+      <div id="div1">
+        <div class="좋아요아쉬워요범위">
+          <div class="좋아요아쉬워요테두리"></div>
+          <button class="좋아요버튼">
+            <div class="좋아요폰트">좋아요</div>
+          </button>
+          <button class="아쉬워요버튼" id="showDiv2Button">
+            <div class="아쉬워요폰트">아쉬워요</div>
+          </button>
+        </div>
+        <button class="평가버튼" style="width: 170px; left: 18px; top: 467px" onclick="toggleButton(this)">
+          <div class="평가버튼폰트">👍🏻 영상 퀄리티가 좋아요</div>
+        </button>
+        <button class="평가버튼" style="width: 157px; left: 214px; top: 466px" onclick="toggleButton(this)">
+          <div class="평가버튼폰트">⭐️ 정보가 도움이 돼요</div>
+        </button>
+        <button class="평가버튼" style="width: 151px; left: 18px; top: 519px" onclick="toggleButton(this)">
+          <div class="평가버튼폰트">😄 콘텐츠가 재밌어요</div>
+        </button>
+        <button class="평가버튼" style="width: 192px; left: 180px; top: 519px" onclick="toggleButton(this)">
+          <div class="평가버튼폰트">💡 믿을만한 정보를 알려줘요</div>
+        </button>
+        <button class="평가버튼" style="width: 170px; left: 18px; top: 572px" onclick="toggleButton(this)">
+          <div class="평가버튼폰트">🏃🏻‍♀️ 트렌드 반영이 빨라요</div>
+        </button>
+        <button class="평가버튼" style="width: 169px; left: 203px; top: 572px" onclick="toggleButton(this)">
+          <div class="평가버튼폰트">🎥 시청 길이가 적당해요</div>
+        </button>
+        <button class="평가버튼" style="width: 232px; left: 18px; top: 624px" onclick="toggleButton(this)">
+          <div class="평가버튼폰트">🌞️ 업데이트가 정기적으로 이뤄져요</div>
+        </button>
+        <button class="평가버튼" style="width: 112px; left: 260px; top: 624px" onclick="toggleButton(this)">
+          <div class="평가버튼폰트">🥰 팬이 됐어요</div>
+        </button>
+      </div>
+
+      <div id="div2" style="display: none">
+        <div class="좋아요아쉬워요범위">
+          <div class="좋아요아쉬워요테두리"></div>
+          <button class="아쉬워요버튼" id="showDiv1Button" style="left: 0px">
+            <div class="좋아요폰트" style="color: #161616">좋아요</div>
+          </button>
+          <button class="좋아요버튼" style="left: 172px">
+            <div class="아쉬워요폰트" style="color: white">아쉬워요</div>
+          </button>
+        </div>
+        <button class="평가버튼" style="width: 166px; left: 20px; top: 467px" onclick="toggleButton(this)">
+          <div class="평가버튼폰트">😨 과장된 내용이 있어요</div>
+        </button>
+        <button class="평가버튼" style="width: 180px; left: 194px; top: 467px" onclick="toggleButton(this)">
+          <div class="평가버튼폰트">📹 광고가 지나치게 많아요</div>
+        </button>
+        <button class="평가버튼" style="width: 153px; left: 20px; top: 519px" onclick="toggleButton(this)">
+          <div class="평가버튼폰트">😳 현실성이 떨어져요</div>
+        </button>
+        <button class="평가버튼" style="width: 179px; left: 195px; top: 519px" onclick="toggleButton(this)">
+          <div class="평가버튼폰트">🙅🏻‍♀️ 거짓된 정보를 알려줘요</div>
+        </button>
+        <button class="평가버튼" style="width: 142px; left: 20px; top: 572px" onclick="toggleButton(this)">
+          <div class="평가버튼폰트">🤯 이해가 잘 안돼요</div>
+        </button>
+        <button class="평가버튼" style="width: 188px; left: 186px; top: 572px" onclick="toggleButton(this)">
+          <div class="평가버튼폰트">👩🏻‍❤️‍💋‍👨🏻 선정적인 내용이 있어요</div>
+        </button>
+        <button class="평가버튼" style="width: 250px; left: 20px; top: 624px" onclick="toggleButton(this)">
+          <div class="평가버튼폰트">💨 장면 전환이 너무 빨라요 or 느려요</div>
+        </button>
+      </div>
+
+      <button id="save-button" class="작성완료버튼" onclick="location.href='five.html'">
+        <div class="작성완료폰트">작성 완료</div>
+      </button>
+
+      <div class="하단바">
+        <div class="하단바선" style="top: 0px"></div>
+        <button class="하단바커뮤니티구역" style="cursor: pointer;" onclick="location.href='../commu/commu.html'">
+          <div class="하단바커뮤니티이미지">
+            <img src="../images/하단바커뮤니티.svg" />
+          </div>
+          <div class="하단바폰트">커뮤니티</div>
+        </button>
+        <button class="하단바홈구역" style="cursor: pointer;" onclick="location.href='../home/home.html'">
+          <div class="하단바홈이미지">
+            <img src="../images/하단바홈선택.svg" />
+          </div>
+          <div class="하단바폰트" style="color: #3a94cb">홈</div>
+        </button>
+        <button class="하단바마이페이지구역" style="cursor: pointer;" onclick="location.href='../mypage/mypage.html'">
+          <div class="하단바마이페이지이미지">
+            <img src="../images/하단바마이페이지.svg" />
+          </div>
+          <div class="하단바폰트">마이페이지</div>
+        </button>
+        <div class="하단바선" style="bottom: 0px"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // 버튼누르면버튼모양바뀌는거
+    function toggleButton(button) {
+      button.classList.toggle("selected");
+    }
+
+    // 좋아요아쉬워요바뀌는거
+    document
+      .getElementById("showDiv2Button")
+      .addEventListener("click", function () {
+        var div1 = document.getElementById("div1");
+        var div2 = document.getElementById("div2");
+        var showDiv1Button = document.getElementById("showDiv1Button");
+        var showDiv2Button = document.getElementById("showDiv2Button");
+
+        div1.style.display = "none";
+        div2.style.display = "block";
+        showDiv1Button.style.display = "block";
+        showDiv2Button.style.display = "none";
+      });
+
+    document
+      .getElementById("showDiv1Button")
+      .addEventListener("click", function () {
+        var div1 = document.getElementById("div1");
+        var div2 = document.getElementById("div2");
+        var showDiv1Button = document.getElementById("showDiv1Button");
+        var showDiv2Button = document.getElementById("showDiv2Button");
+
+        div1.style.display = "block";
+        div2.style.display = "none";
+        showDiv1Button.style.display = "none";
+        showDiv2Button.style.display = "block";
+      });
+
+    // alert보여주는부분
+    const showAlertButton = document.getElementById("showAlert");
+    const overlay = document.getElementById("overlay");
+    const alertBox = document.getElementById("alertBox");
+    const closeAlertButton = document.getElementById("closeAlert");
+
+    showAlertButton.addEventListener("click", () => {
+      overlay.style.display = "flex";
+    });
+
+    closeAlertButton.addEventListener("click", () => {
+      overlay.style.display = "none";
+    });
+
+    // 화면 크기가 변경될 때 중앙 정렬을 유지합니다.
+    window.addEventListener("resize", () => {
+      if (overlay.style.display === "flex") {
+        const windowHeight = window.innerHeight;
+        const alertBoxHeight = alertBox.clientHeight;
+        const topMargin = (windowHeight - alertBoxHeight) / 2;
+        alertBox.style.marginTop = `${topMargin}px`;
+      }
+    });
+  </script>
+</body>
+
+</html>

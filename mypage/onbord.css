@@ -1,0 +1,247 @@
+header {
+  width: 360px;
+  left: 16px;
+  top: 62px;
+  position: absolute;
+  text-align: center;
+  color: #161616;
+  font-size: 18px;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 24.84px;
+  word-wrap: break-word;
+}
+.image-button {
+  left: 0px;
+  top: 3px;
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+#backicon {
+  width: 100px;
+  height: 20px;
+  text-align: left;
+  left: 33px;
+  top: 118px;
+  background: none;
+  border: none;
+  position: absolute;
+}
+div.line {
+  width: 390px;
+  height: 0px;
+  left: 0px;
+  top: 155px;
+  position: absolute;
+  border: 0.5px #969696 solid;
+}
+p.all {
+  left: 70px;
+  top: 104px;
+  position: absolute;
+  color: #0d0d0d;
+  font-size: 16px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 22.08px;
+  word-wrap: break-word;
+}
+
+#overicon {
+  width: 65px;
+  left: 283px;
+  top: 0px;
+  position: absolute;
+  text-align: right;
+  color: #969595;
+  font-size: 15px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 20.7px;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.title {
+  width: 341px;
+  height: 83px;
+  left: 24px;
+  top: 104px;
+  position: absolute;
+}
+.one {
+  left: 160px;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+}
+
+.con {
+  left: 103px;
+  top: 62px;
+  position: absolute;
+  text-align: center;
+  color: #969595;
+  font-size: 15px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 20.7px;
+  word-wrap: break-word;
+}
+
+.gwansim {
+  width: 341px;
+  left: 24px;
+  top: 232px;
+  position: absolute;
+  text-align: center;
+  color: #3d3d3d;
+  font-size: 22px;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 30.36px;
+  word-wrap: break-word;
+}
+.관심분야아래 {
+  width: 308px;
+  height: 186px;
+  left: 45px;
+  top: 278px;
+  position: absolute;
+}
+
+.관심분야아래버튼 {
+  width: 94px;
+  height: 36px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #eeeeee;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+}
+.관심분야아래폰트 {
+  width: 44px;
+  left: 25px;
+  top: 7px;
+  position: absolute;
+  text-align: center;
+  color: #646464;
+  font-size: 16px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 22.08px;
+  word-wrap: break-word;
+}
+
+.선택완료범위 {
+  width: 328px;
+  height: 62px;
+  left: 31px;
+  top: 650px;
+  position: absolute;
+}
+.선택완료버튼 {
+  width: 328px;
+  height: 62px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #6badd5;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+}
+.선택완료폰트 {
+  left: 132px;
+  top: 18px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 19px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 26.22px;
+  word-wrap: break-word;
+}
+.sns범위 {
+  width: 300px;
+  height: 206px;
+  left: 44px;
+  top: 232px;
+  position: absolute;
+}
+
+.sns버튼 {
+  width: 143px;
+  height: 98px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #eeeeee;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+}
+.sns폰트 {
+  top: 60px;
+  position: absolute;
+  text-align: center;
+  color: #3d3d3d;
+  font-size: 13px;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 17.94px;
+  word-wrap: break-word;
+}
+.유튜브범위 {
+  width: 143px;
+  height: 98px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+.유튜브로고 {
+  width: 65px;
+  height: 50px;
+  left: 39px;
+  top: 10px;
+  position: absolute;
+}
+.인스타범위 {
+  width: 143px;
+  height: 98px;
+  left: 157px;
+  top: 0px;
+  position: absolute;
+}
+.인스타로고 {
+  width: 33px;
+  height: 32px;
+  left: 53px;
+  top: 22px;
+  position: absolute;
+}
+.틱톡범위 {
+  width: 143px;
+  height: 98px;
+  left: 1px;
+  top: 108px;
+  position: absolute;
+}
+.틱톡로고 {
+  width: 31px;
+  height: 35px;
+  left: 57px;
+  top: 18px;
+  position: absolute;
+}
+.selected {
+  border: 2px #6badd5 solid;
+}

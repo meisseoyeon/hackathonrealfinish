@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tie</title>
+  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="../allstyle.css">
+
+
+</head>
+
+<body>
+  <div class="iphone-frame">
+    <div class="전체">
+
+      <div class="input-container" style="top: 55px;">
+        <input type="text" style="top: 55px;" placeholder="관심 계정, 채널, 태그를 입력하세요.">
+        <button style="cursor: pointer;" onclick="location.href='search2.html'"><span>검색</span></button>
+      </div>
+
+
+      <div style="
+            left: 34px;
+            top: 165px;
+            position: absolute;
+            color: #161616;
+            font-size: 19px;
+            font-family: Pretendard;
+            font-weight: 700;
+            line-height: 26.22px;
+            word-wrap: break-word;
+          ">
+        추천 태그
+      </div>
+      <div style="
+            left: 32px;
+            top: 395px;
+            position: absolute;
+            color: #161616;
+            font-size: 19px;
+            font-family: Pretendard;
+            font-weight: 700;
+            line-height: 26.22px;
+            word-wrap: break-word;
+          ">
+        실시간 인기 채널/계정
+      </div>
+      <div style="
+            left: 32px;
+            top: 425px;
+            position: absolute;
+            color: #969696;
+            font-size: 12px;
+            font-family: Pretendard;
+            font-weight: 500;
+            line-height: 16.56px;
+            word-wrap: break-word;
+          ">
+        2023.08.08 23:59 기준
+      </div>
+      <div style="
+            width: 325px;
+            height: 165px;
+            left: -309px;
+            top: 205px;
+            position: absolute;
+            background: rgba(248, 148, 148, 0.6);
+            border-radius: 14px;
+          "></div>
+      <div style="
+            width: 325px;
+            height: 165px;
+            left: 373px;
+            top: 205px;
+            position: absolute;
+            background: rgba(175, 213, 207, 0.6);
+            border-radius: 14px;
+          "></div>
+      <div style="
+            width: 121px;
+            height: 21px;
+            left: 171px;
+            top: 586px;
+            position: absolute;
+          ">
+        <div style="
+              width: 121px;
+              left: 0px;
+              top: 0px;
+              position: absolute;
+              color: #969696;
+              font-size: 15px;
+              font-family: Pretendard;
+              font-weight: 500;
+              line-height: 20.7px;
+              word-wrap: break-word;
+            ">
+          펼쳐보기
+        </div>
+
+        <img src="../images/vector-98.svg" style="
+                width: 10.87px;
+                height: 5.39px;
+                left: 65px;
+                top: 8px;
+                position: absolute;
+                transform: rotate(+90deg);
+                transform-origin: 0 0;
+                background: #ffff;
+                "></img>
+
+
+      </div>
+      <div style="
+            left: 209px;
+            top: 66px;
+            position: absolute;
+            text-align: center;
+            color: black;
+            font-size: 36px;
+            font-family: Pretendard;
+            font-weight: 500;
+            line-height: 49.68px;
+            word-wrap: break-word;
+          "></div>
+      <div style="
+            width: 94px;
+            height: 36px;
+            left: 16px;
+            top: 108px;
+            position: absolute;
+          ">
+        <div style="
+              width: 94px;
+              height: 36px;
+              left: 0px;
+              top: 0px;
+              position: absolute;
+              border-radius: 14px;
+              border: 0.5px #3a94cb solid;
+            "></div>
+        <div style="
+              width: 67px;
+              left: 13px;
+              top: 9px;
+              position: absolute;
+              text-align: center;
+              color: #646464;
+              font-size: 14px;
+              font-family: Pretendard;
+              font-weight: 500;
+              line-height: 19.32px;
+              word-wrap: break-word;
+            ">
+          인스타그램
+        </div>
+      </div>
+      <div style="
+            width: 79px;
+            height: 36px;
+            left: 123px;
+            top: 108px;
+            position: absolute;
+          ">
+        <div style="
+              width: 79px;
+              height: 36px;
+              left: 0px;
+              top: 0px;
+              position: absolute;
+              border-radius: 14px;
+              border: 0.5px #3a94cb solid;
+            "></div>
+        <div style="
+              width: 44px;
+              left: 17px;
+              top: 9px;
+              position: absolute;
+              text-align: center;
+              color: #646464;
+              font-size: 14px;
+              font-family: Pretendard;
+              font-weight: 500;
+              line-height: 19.32px;
+              word-wrap: break-word;
+            ">
+          틱톡
+        </div>
+      </div>
+      <div style="
+            width: 80px;
+            height: 36px;
+            left: 216px;
+            top: 108px;
+            position: absolute;
+            background: #8bbbd9;
+            border-radius: 14px;
+          "></div>
+      <div style="
+            width: 44px;
+            left: 234px;
+            top: 117px;
+            position: absolute;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            font-family: Pretendard;
+            font-weight: 500;
+            line-height: 19.32px;
+            word-wrap: break-word;
+          ">
+        유튜브
+      </div>
+      <div style="
+            width: 325px;
+            height: 165px;
+            left: 31px;
+            top: 206px;
+            position: absolute;
+          ">
+        <div style="
+              width: 325px;
+              height: 165px;
+              left: 0px;
+              top: 0px;
+              position: absolute;
+              background: rgba(139.08, 187.44, 216.75, 0.81);
+              border-radius: 14px;
+            "></div>
+        <div style="
+              width: 80px;
+              height: 36px;
+              left: 24px;
+              top: 59px;
+              position: absolute;
+            ">
+          <div style="
+                width: 80px;
+                height: 36px;
+                left: 0px;
+                top: 0px;
+                position: absolute;
+                background: rgba(255, 255, 255, 0.61);
+                border-radius: 14px;
+              "></div>
+          <div style="
+                width: 67px;
+                left: 6px;
+                top: 9px;
+                position: absolute;
+                text-align: center;
+                color: #646464;
+                font-size: 14px;
+                font-family: Pretendard;
+                font-weight: 500;
+                line-height: 19.32px;
+                word-wrap: break-word;
+              ">
+            #직장인
+          </div>
+        </div>
+        <div style="
+              width: 70px;
+              height: 36px;
+              left: 24px;
+              top: 103px;
+              position: absolute;
+            ">
+          <div style="
+                width: 70px;
+                height: 36px;
+                left: 0px;
+                top: 0px;
+                position: absolute;
+                background: rgba(255, 255, 255, 0.61);
+                border-radius: 14px;
+              "></div>
+          <div style="
+                width: 33px;
+                left: 19px;
+                top: 8px;
+                position: absolute;
+                text-align: center;
+                color: #646464;
+                font-size: 14px;
+                font-family: Pretendard;
+                font-weight: 500;
+                line-height: 19.32px;
+                word-wrap: break-word;
+              ">
+            #혼밥
+          </div>
+        </div>
+        <div style="
+              width: 70px;
+              height: 36px;
+              left: 102px;
+              top: 104px;
+              position: absolute;
+            ">
+          <div style="
+                width: 70px;
+                height: 36px;
+                left: 0px;
+                top: 0px;
+                position: absolute;
+                background: rgba(255, 255, 255, 0.61);
+                border-radius: 14px;
+              "></div>
+          <div style="
+                width: 33px;
+                left: 18px;
+                top: 7px;
+                position: absolute;
+                text-align: center;
+                color: #646464;
+                font-size: 14px;
+                font-family: Pretendard;
+                font-weight: 500;
+                line-height: 19.32px;
+                word-wrap: break-word;
+              ">
+            #연애
+          </div>
+        </div>
+        <div style="
+              width: 77px;
+              height: 36px;
+              left: 180px;
+              top: 103px;
+              position: absolute;
+            ">
+          <div style="
+                width: 77px;
+                height: 36px;
+                left: 0px;
+                top: 0px;
+                position: absolute;
+                background: rgba(255, 255, 255, 0.61);
+                border-radius: 14px;
+              "></div>
+          <div style="
+                width: 61px;
+                left: 8px;
+                top: 8px;
+                position: absolute;
+                text-align: center;
+                color: #646464;
+                font-size: 14px;
+                font-family: Pretendard;
+                font-weight: 500;
+                line-height: 19.32px;
+                word-wrap: break-word;
+              ">
+            #소개팅
+          </div>
+        </div>
+        <div style="
+              width: 69px;
+              height: 36px;
+              left: 112px;
+              top: 59px;
+              position: absolute;
+            ">
+          <div style="
+                width: 69px;
+                height: 36px;
+                left: 0px;
+                top: 0px;
+                position: absolute;
+                background: rgba(255, 255, 255, 0.61);
+                border-radius: 14px;
+              "></div>
+          <div style="
+                width: 44px;
+                left: 12px;
+                top: 9px;
+                position: absolute;
+                text-align: center;
+                color: #646464;
+                font-size: 14px;
+                font-family: Pretendard;
+                font-weight: 500;
+                line-height: 19.32px;
+                word-wrap: break-word;
+              ">
+            #운동
+          </div>
+        </div>
+        <div style="
+              width: 69px;
+              height: 36px;
+              left: 188px;
+              top: 59px;
+              position: absolute;
+            ">
+          <div style="
+                width: 69px;
+                height: 36px;
+                left: 0px;
+                top: 0px;
+                position: absolute;
+                background: rgba(255, 255, 255, 0.61);
+                border-radius: 14px;
+              "></div>
+          <div style="
+                width: 44px;
+                left: 13px;
+                top: 9px;
+                position: absolute;
+                text-align: center;
+                color: #646464;
+                font-size: 14px;
+                font-family: Pretendard;
+                font-weight: 500;
+                line-height: 19.32px;
+                word-wrap: break-word;
+              ">
+            #러닝
+          </div>
+        </div>
+        <div style="
+              left: 24px;
+              top: 17px;
+              position: absolute;
+              color: white;
+              font-size: 18px;
+              font-family: Pretendard;
+              font-weight: 700;
+              line-height: 24.84px;
+              word-wrap: break-word;
+            ">
+          투데이
+        </div>
+      </div>
+      <div style="
+            width: 320px;
+            height: 117px;
+            left: 33px;
+            top: 458px;
+            position: absolute;
+          ">
+        <div style="
+              width: 318px;
+              height: 0px;
+              left: 2px;
+              top: 37px;
+              position: absolute;
+              border: 0.5px #aeaeae solid;
+            "></div>
+        <div style="
+              width: 318px;
+              height: 0px;
+              left: 2px;
+              top: 83px;
+              position: absolute;
+              border: 0.5px #aeaeae solid;
+            "></div>
+        <div style="
+              width: 159px;
+              height: 25px;
+              left: 1px;
+              top: 0px;
+              position: absolute;
+            ">
+          <div style="
+                left: 0px;
+                top: 0px;
+                position: absolute;
+                color: #161616;
+                font-size: 18px;
+                font-family: Pretendard;
+                font-weight: 500;
+                line-height: 24.84px;
+                word-wrap: break-word;
+              ">
+            1
+          </div>
+          <div style="
+                left: 21px;
+                top: 2px;
+                position: absolute;
+                color: #161616;
+                font-size: 16px;
+                font-family: Pretendard;
+                font-weight: 500;
+                line-height: 22.08px;
+                word-wrap: break-word;
+              ">
+            LeoJ Makeup
+          </div>
+          <div style="
+                width: 37px;
+                height: 16px;
+                left: 122px;
+                top: 7px;
+                position: absolute;
+                background: rgba(51, 51, 51, 0.62);
+                border-radius: 14px;
+              "></div>
+          <div style="
+                left: 129px;
+                top: 9px;
+                position: absolute;
+                color: white;
+                font-size: 9px;
+                font-family: Pretendard;
+                font-weight: 500;
+                line-height: 12.42px;
+                word-wrap: break-word;
+              ">
+            유튜브
+          </div>
+        </div>
+        <div style="
+              width: 152px;
+              height: 25px;
+              left: 0px;
+              top: 46px;
+              position: absolute;
+            ">
+          <div style="
+                left: 22px;
+                top: 1px;
+                position: absolute;
+                color: #161616;
+                font-size: 16px;
+                font-family: Pretendard;
+                font-weight: 500;
+                line-height: 22.08px;
+                word-wrap: break-word;
+              ">
+            빵빵이의 일상
+          </div>
+          <div style="
+                left: 0px;
+                top: 0px;
+                position: absolute;
+                color: #161616;
+                font-size: 18px;
+                font-family: Pretendard;
+                font-weight: 500;
+                line-height: 24.84px;
+                word-wrap: break-word;
+              ">
+            2
+          </div>
+          <div style="
+                width: 37px;
+                height: 16px;
+                left: 115px;
+                top: 4px;
+                position: absolute;
+                background: rgba(51, 51, 51, 0.62);
+                border-radius: 14px;
+              "></div>
+          <div style="
+                left: 122px;
+                top: 6px;
+                position: absolute;
+                color: white;
+                font-size: 9px;
+                font-family: Pretendard;
+                font-weight: 500;
+                line-height: 12.42px;
+                word-wrap: break-word;
+              ">
+            유튜브
+          </div>
+        </div>
+        <div style="
+              width: 195px;
+              height: 25px;
+              left: 0px;
+              top: 92px;
+              position: absolute;
+            ">
+          <div style="
+                left: 22px;
+                top: 1px;
+                position: absolute;
+                color: #161616;
+                font-size: 16px;
+                font-family: Pretendard;
+                font-weight: 500;
+                line-height: 22.08px;
+                word-wrap: break-word;
+              ">
+            차린건 쥐뿔도 없지만
+          </div>
+          <div style="
+                left: 0px;
+                top: 0px;
+                position: absolute;
+                color: #161616;
+                font-size: 18px;
+                font-family: Pretendard;
+                font-weight: 500;
+                line-height: 24.84px;
+                word-wrap: break-word;
+              ">
+            3
+          </div>
+          <div style="
+                width: 37px;
+                height: 16px;
+                left: 158px;
+                top: 4px;
+                position: absolute;
+                background: rgba(51, 51, 51, 0.62);
+                border-radius: 14px;
+              "></div>
+          <div style="
+                left: 165px;
+                top: 6px;
+                position: absolute;
+                color: white;
+                font-size: 9px;
+                font-family: Pretendard;
+                font-weight: 500;
+                line-height: 12.42px;
+                word-wrap: break-word;
+              ">
+            유튜브
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="하단바">
+      <div class="하단바선" style="top: 0px"></div>
+      <button class="하단바커뮤니티구역" style="cursor: pointer;" onclick="location.href='../commu/commu.html'">
+        <div class="하단바커뮤니티이미지">
+          <img src="../images/하단바커뮤니티.svg" />
+        </div>
+        <div class="하단바폰트">커뮤니티</div>
+      </button>
+      <button class="하단바홈구역" style="cursor: pointer;" onclick="location.href='../home/home.html'">
+        <div class="하단바홈이미지">
+          <img src="../images/하단바홈선택.svg" />
+        </div>
+        <div class="하단바폰트" style="color: #3a94cb">홈</div>
+      </button>
+      <button class="하단바마이페이지구역" style="cursor: pointer;" onclick="location.href='../mypage/mypage.html'">
+        <div class="하단바마이페이지이미지">
+          <img src="../images/하단바마이페이지.svg" />
+        </div>
+        <div class="하단바폰트">마이페이지</div>
+      </button>
+      <div class="하단바선" style="bottom: 0px"></div>
+    </div>
+
+  </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</html>

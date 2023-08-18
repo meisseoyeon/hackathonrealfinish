@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="onbord.css" />
+    <link rel="stylesheet" href="../allstyle.css">
+
+    <title>Tie</title>
+</head>
+
+<body>
+    <div class="iphone-frame">
+        <div class="전체">
+            <header>
+                <button class="image-button" onClick="history.back();">
+                    <img src="../images/vector-98.svg" alt="">
+                </button>
+                사용 중인 SNS
+            </header>
+            <button id="backicon">
+                <img src="../images/icon-back-square.svg" />
+            </button>
+            <p class="all">전체 취소</p>
+
+            <div class="line"></div>
+
+
+
+
+
+            <div class="sns범위">
+                <div class="유튜브범위">
+                    <button class="sns버튼" onclick="toggleButton(this)">
+                        <img class="유튜브로고" src="../images/youtube.png" />
+                        <div class="sns폰트" style="left: 55px">유튜브</div>
+                    </button>
+                </div>
+                <div class="인스타범위">
+                    <button class="sns버튼" onclick="toggleButton(this)">
+                        <img class="인스타로고" src="../images/insta-3.png" />
+                        <div class="sns폰트" style="left: 44px">인스타그램</div>
+                    </button>
+                </div>
+                <div class="틱톡범위">
+                    <button class="sns버튼" onclick="toggleButton(this)">
+                        <img class="틱톡로고" src="../images/tictok.png" />
+                        <div class="sns폰트" style="left: 60px; top: 61px">틱톡</div>
+                    </button>
+                </div>
+            </div>
+            <div class="선택완료범위">
+                <button class="선택완료버튼">
+                    <div class="선택완료폰트" style="left: 148px">적용</div>
+                </button>
+            </div>
+
+
+            <div class="하단바">
+                <div class="하단바선" style="top: 0px"></div>
+                <button class="하단바커뮤니티구역" style="cursor: pointer;" onclick="location.href='../commu/commu.html'">
+                    <div class="하단바커뮤니티이미지">
+                        <img src="../images/하단바커뮤니티.svg" />
+                    </div>
+                    <div class="하단바폰트">커뮤니티</div>
+                </button>
+                <button class="하단바홈구역" style="cursor: pointer;" onclick="location.href='../home/home.html'">
+                    <div class="하단바홈이미지">
+                        <img src="../images/하단바홈선택.svg" />
+                    </div>
+                    <div class="하단바폰트" style="color: #3a94cb">홈</div>
+                </button>
+                <button class="하단바마이페이지구역" style="cursor: pointer;" onclick="location.href='../mypage/mypage.html'">
+                    <div class="하단바마이페이지이미지">
+                        <img src="../images/하단바마이페이지.svg" />
+                    </div>
+                    <div class="하단바폰트">마이페이지</div>
+                </button>
+                <div class="하단바선" style="bottom: 0px"></div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function toggleButton(button) {
+            button.classList.toggle("selected");
+        }
+    </script>
+</body>
+
+</html>

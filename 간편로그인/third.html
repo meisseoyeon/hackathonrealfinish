@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../allstyle.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="iphone-frame">
+    <div class="전체">
+      <div class="간편로그인">SNS 간편 로그인</div>
+      <button id="backicon" onClick="history.back();">
+        <img src="backicon.png" />
+      </button>
+      <div class="약관동의">약관동의</div>
+      <div class="서비스를">
+        서비스를 이용하려면 다음 정책에 대한<br />동의가 필요해요.
+      </div>
+      <div class="전체동의구역">
+        <button class="체크박스 전체동의버튼" onclick="toggleAllCheckboxes()">
+          <img id="체크박스크기" src="checkbox.png" />
+        </button>
+        <div class="전체동의폰트">전체 동의</div>
+      </div>
+      <div class="가로줄"></div>
+      <div class="하단구역">
+        <div class="만14세구역">
+          <button class="체크박스" onclick="changeImage('만14세구역')">
+            <img id="체크박스크기" src="checkbox.png" />
+          </button>
+          <div class="아래폰트">만 14세 이상 가입 동의 (필수)</div>
+        </div>
+        <div class="서비스이용동의구역">
+          <button class="체크박스" onclick="changeImage('서비스이용동의구역')">
+            <img id="체크박스크기" src="checkbox.png" />
+          </button>
+          <div class="아래폰트">서비스 이용 동의 (필수)</div>
+        </div>
+        <div class="개인정보구역">
+          <button class="체크박스" onclick="changeImage('개인정보구역')">
+            <img id="체크박스크기" src="checkbox.png" />
+          </button>
+          <div class="아래폰트">개인정보처리방침 동의 (필수)</div>
+        </div>
+        <div class="마케팅구역">
+          <button class="체크박스" onclick="changeImage('마케팅구역')">
+            <img id="체크박스크기" src="checkbox.png" />
+          </button>
+          <div class="아래폰트">마케팅 정보, 알림 수신 동의 (선택)</div>
+        </div>
+      </div>
+      <div class="완료범위">
+        <button class="로그인버튼" onclick="location.href='../온보딩/first.html'">
+          <div class="로그인폰트" style="left: 148px">완료</div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function toggleAllCheckboxes() {
+      const allCheckboxes = document.querySelectorAll(".하단구역 .체크박스");
+      const isAllChecked = allCheckboxes[0]
+        .querySelector("img")
+        .src.includes("checkbox.png");
+
+      allCheckboxes.forEach((checkbox) => {
+        const checkboxImage = checkbox.querySelector("img");
+        checkboxImage.src = isAllChecked ? "bluecheck.png" : "checkbox.png";
+      });
+
+      const toggleButtonImage = document.querySelector(".전체동의버튼 img");
+      toggleButtonImage.src = isAllChecked ? "bluecheck.png" : "checkbox.png";
+    }
+
+    function changeImage(buttonClass) {
+      const button = document.querySelector(`.${buttonClass}`);
+      const image = button.querySelector("img");
+      const isChecked = image.src.includes("checkbox.png");
+
+      // 이미지 변경
+      if (isChecked) {
+        image.src = "bluecheck.png"; // 새 이미지로 변경
+      } else {
+        image.src = "checkbox.png"; // 기존 이미지로 변경
+      }
+    }
+  </script>
+</body>
+
+</html>

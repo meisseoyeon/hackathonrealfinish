@@ -1,0 +1,321 @@
+html {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: white;
+}
+
+.mypage {
+  /*padding: 9.31rem 3rem;*/
+  padding: 6.62rem 1rem;
+}
+
+header {
+  width: 360px;
+  left: 16px;
+  top: 62px;
+  position: absolute;
+  text-align: center;
+  color: #161616;
+  font-size: 18px;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 24.84px;
+  word-wrap: break-word;
+}
+.image-button {
+  left: 0px;
+  top: 3px;
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+button.설정버튼 {
+  width: 24px;
+  height: 24px;
+  left: 330px;
+  top: 0px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  border: 0.75px;
+}
+#profile {
+  width: 359px;
+  height: 153px;
+  left: 15px;
+  top: 106px;
+  position: absolute;
+  background: #6badd5;
+  border-radius: 14px;
+  border-color: #6badd5;
+  border: 0.75px #6badd5 solid;
+}
+p.tie {
+  left: 137px;
+  top: 60px;
+  position: absolute;
+  color: white;
+  font-size: 21px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 28.98px;
+  word-wrap: break-word;
+}
+#mypro {
+  width: 78px;
+  height: 78px;
+  left: 37px;
+  top: 35px;
+  position: absolute;
+}
+#log {
+  width: 359px;
+  height: 65px;
+  left: 16px;
+  top: 360px;
+  position: absolute;
+  background: #a3d4f1;
+  border-radius: 14px;
+  border-color: #a3d4f1;
+  border: 0.75px #a3d4f1 solid;
+}
+p.logp {
+  left: 37px;
+  top: 17px;
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 24.84px;
+  word-wrap: break-word;
+}
+
+div.change {
+  width: 78px;
+  height: 78px;
+  left: 157px;
+  top: 125px;
+  position: absolute;
+}
+div.line {
+  width: 307px;
+  height: 0px;
+  left: 0px;
+  top: 34px;
+  position: absolute;
+  border: 0.5px #76a9c7 solid;
+}
+section {
+  height: 34px;
+  left: 43px;
+  top: 225px;
+  position: absolute;
+}
+input {
+  left: 5px;
+  top: 0px;
+  text-align: center;
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  border: 0px solid #ffff;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+input::placeholder {
+  position: absolute;
+  align-items: center;
+  color: #010101;
+  font-size: 17px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 23.46px;
+  word-wrap: break-word;
+}
+.profileimg {
+  width: 78px;
+  height: 78px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+nav {
+  padding-top: 22rem;
+}
+nav1 {
+  padding-top: 36rem;
+}
+
+div.top {
+  padding-top: 3rem;
+}
+
+button.basicbutton {
+  width: 22.4375rem;
+  height: 4.0625rem;
+  flex-shrink: 0;
+  border-radius: 0.875rem;
+  background: #6badd5;
+}
+#계정 {
+  width: 297px;
+  height: 54px;
+  left: 48px;
+  top: 286px;
+  position: absolute;
+  background: #6badd5;
+  border-radius: 14px;
+  border-color: #6badd5;
+}
+p.계정설정 {
+  left: 115px;
+  top: 14px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 24.84px;
+  word-wrap: break-word;
+}
+
+/*mypage_setting*/
+button.setting {
+  width: 359px;
+  height: 65px;
+  left: 15px;
+  top: 114px;
+  position: absolute;
+  background: #6badd5;
+  border-radius: 14px;
+  border-width: 0px;
+}
+p.settingp {
+  left: 56px;
+  top: 20px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 24.84px;
+  word-wrap: break-word;
+}
+button.setting img {
+  width: 24px;
+  height: 24px;
+  left: 24px;
+  top: 20px;
+  position: absolute;
+
+  border: none;
+}
+p.계정정보 {
+  left: 23px;
+  top: 121px;
+  position: absolute;
+  text-align: center;
+  color: #414141;
+  font-size: 15px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 20.7px;
+  word-wrap: break-word;
+}
+section.계정정보틀 {
+  left: 23px;
+  top: 158px;
+  position: absolute;
+}
+.계정기본 {
+  width: 50px;
+  position: absolute;
+  color: #0d0d0d;
+  font-size: 18px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 24.84px;
+  word-wrap: break-word;
+}
+.email {
+  left: 230px;
+  top: 3px;
+  position: absolute;
+  text-align: center;
+  color: #414141;
+  font-size: 14px;
+  font-family: Pretendard;
+  font-weight: 500;
+  text-decoration: underline;
+  line-height: 19.32px;
+  word-wrap: break-word;
+}
+section img {
+  left: 330px;
+  top: 3px;
+  position: absolute;
+  background: none;
+  border: none;
+}
+/*recent*/
+.navbar {
+  width: 391px;
+  height: 41px;
+  left: -1px;
+  top: 115px;
+  position: absolute;
+}
+.nav-link {
+  color: #6a6a6a;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 0.6875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 138%; /* 0.94875rem */
+  letter-spacing: -0.02063rem;
+}
+.nav-item {
+  left: 31px;
+  top: 0px;
+  position: absolute;
+  color: #3a94cb;
+  font-size: 18px;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 24.84px;
+  word-wrap: break-word;
+}
+.back {
+  left: 84px;
+  top: 361px;
+  position: absolute;
+}
+#back {
+  width: 138px;
+  height: 123px;
+  left: 42px;
+  top: 0px;
+  position: absolute;
+}
+.back span {
+  left: 0px;
+  top: 138px;
+  width: 200px;
+  position: absolute;
+  text-align: center;
+  color: #a8a8a8;
+  font-size: 17px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 23.46px;
+  word-wrap: break-word;
+}

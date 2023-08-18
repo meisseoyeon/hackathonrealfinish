@@ -1,0 +1,304 @@
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: white;
+}
+.title {
+  top: 297px;
+  left: 44px;
+  position: absolute;
+  color: #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 132%; /* 30.36px */
+  letter-spacing: -1.15px;
+}
+.midtitle {
+  top: 340px;
+  left: 102px;
+  position: absolute;
+  color: #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 131%; /* 20.96px */
+  letter-spacing: -0.8px;
+}
+.간편로그인로고 {
+  width: 109px;
+  height: 97px;
+  top: 167px;
+  left: 141px;
+  position: absolute;
+}
+.로그인범위 {
+  width: 328px;
+  height: 62px;
+  left: 31px;
+  top: 686px;
+  position: absolute;
+}
+.로그인버튼 {
+  width: 328px;
+  height: 62px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #6badd5;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+}
+.로그인폰트 {
+  left: 139px;
+  top: 18px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 19px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 26.22px;
+  word-wrap: break-word;
+}
+.노그인범위 {
+  width: 145px;
+  height: 23px;
+  left: 125px;
+  top: 768px;
+  position: absolute;
+}
+.노그인버튼 {
+  width: 145px;
+  height: 23px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+.노그인폰트 {
+  left: 2px;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+  color: #030303;
+  font-size: 17px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 23.46px;
+  word-wrap: break-word;
+}
+#글씨로고 {
+  width: 130px;
+  height: 45px;
+  left: 130px;
+  top: 147px;
+  position: absolute;
+}
+.로고글씨체 {
+  left: 101px;
+  top: 209px;
+  position: absolute;
+  text-align: center;
+  color: #6badd5;
+  font-size: 19px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 24.89px;
+  word-wrap: break-word;
+}
+
+.카카오버튼 {
+  width: 328px;
+  height: 62px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  border-radius: 14px;
+  background-color: #ffffff;
+  border: 1.75px #6badd5 solid;
+  cursor: pointer;
+}
+#카카오 {
+  width: 26px;
+  height: 26px;
+  left: 79px;
+  top: 18px;
+  position: absolute;
+}
+.카카오폰트 {
+  left: 116px;
+  top: 18px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 19px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 26.22px;
+  word-wrap: break-word;
+}
+.구글범위 {
+  width: 328px;
+  height: 62px;
+  left: 31px;
+  top: 686px;
+  position: absolute;
+}
+#구글 {
+  width: 29px;
+  height: 30px;
+  left: 87px;
+  top: 16px;
+  position: absolute;
+}
+.간편로그인 {
+  left: 140px;
+  top: 61px;
+  position: absolute;
+  text-align: center;
+  color: #0f0f0f;
+  font-size: 17px;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 22.27px;
+  word-wrap: break-word;
+}
+#backicon {
+  width: 9.5px;
+  height: 19px;
+  left: 23px;
+  top: 65px;
+  position: absolute;
+  background-color: #ffffff;
+  border: none;
+}
+.약관동의 {
+  left: 27px;
+  top: 125px;
+  position: absolute;
+  text-align: center;
+  color: #0f0f0f;
+  font-size: 26px;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 34.06px;
+  word-wrap: break-word;
+}
+.서비스를 {
+  left: 28px;
+  top: 168px;
+  position: absolute;
+  color: #565656;
+  font-size: 16px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 20.96px;
+  word-wrap: break-word;
+}
+.전체동의구역 {
+  width: 245px;
+  height: 20px;
+  left: 24px;
+  top: 242px;
+  position: absolute;
+}
+.체크박스 {
+  width: 19px;
+  height: 19px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+#체크박스크기 {
+  width: 15.83px;
+  height: 15.83px;
+  left: 1.58px;
+  top: 1.58px;
+  position: absolute;
+}
+.전체동의폰트 {
+  width: 220px;
+  left: 25px;
+  top: 0px;
+  position: absolute;
+  color: #565656;
+  font-size: 15px;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 19.65px;
+  word-wrap: break-word;
+}
+.가로줄 {
+  width: 337px;
+  height: 0px;
+  left: 27px;
+  top: 274px;
+  position: absolute;
+  border: 0.5px black solid;
+}
+.하단구역 {
+  width: 246.15px;
+  height: 101px;
+  left: 24px;
+  top: 293px;
+  position: absolute;
+}
+.만14세구역 {
+  width: 245px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+.아래폰트 {
+  width: 220px;
+  left: 25px;
+  top: 0px;
+  position: absolute;
+  color: #565656;
+  font-size: 15px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 19.65px;
+  word-wrap: break-word;
+}
+.서비스이용동의구역 {
+  width: 245px;
+  height: 20px;
+  left: 0px;
+  top: 27px;
+  position: absolute;
+}
+.개인정보구역 {
+  width: 246.15px;
+  height: 20px;
+  left: 0px;
+  top: 54px;
+  position: absolute;
+}
+.마케팅구역 {
+  width: 246px;
+  height: 20px;
+  left: 0px;
+  top: 81px;
+  position: absolute;
+}
+.완료범위 {
+  width: 328px;
+  height: 62px;
+  left: 31px;
+  top: 723px;
+  position: absolute;
+}

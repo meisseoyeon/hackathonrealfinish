@@ -1,0 +1,318 @@
+html {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: white;
+}
+
+header {
+  width: 80px;
+  left: 166px;
+  top: 60px;
+  position: absolute;
+  text-align: center;
+  color: #161616;
+  font-size: 18px;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 24.84px;
+  word-wrap: break-word;
+}
+
+.star {
+  width: 22.5px;
+  height: 24px;
+  left: 349.5px;
+  top: 63px;
+  position: absolute;
+  cursor: pointer;
+}
+figure {
+  width: 346px;
+  height: 42px;
+  left: 10px;
+  top: 80px;
+  position: absolute;
+}
+h2.자유 {
+  position: absolute;
+  color: #161616;
+  text-align: left;
+  font-size: 18px;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 24.84px;
+  word-wrap: break-word;
+}
+
+footer span1 {
+  color: #161616;
+  font-size: 18px;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 24.84px;
+  word-wrap: break-word;
+}
+
+footer span2 {
+  color: #8bbbd9;
+  font-size: 24px;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 33.12px;
+  word-wrap: break-word;
+}
+footer p {
+  position: absolute;
+  text-align: center;
+  color: #a8a8a8;
+  font-size: 12px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 16.56px;
+  word-wrap: break-word;
+}
+section.네모 {
+  width: 164px;
+  height: 188px;
+  left: 12px;
+  top: 80px;
+  position: absolute;
+}
+section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#네모네모 {
+  width: 35px;
+  height: 13px;
+  left: 8px;
+  top: 100px;
+  position: absolute;
+  background: white;
+  border-radius: 8.5px;
+  text-align: center;
+  color: #202020;
+  font-size: 5px;
+  font-family: retendard;
+  font-weight: 600;
+  line-height: 15px;
+  word-wrap: break-word;
+}
+section span {
+  left: 8px;
+  top: 130px;
+  position: absolute;
+  color: white;
+  font-size: 15px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 22.08px;
+  word-wrap: break-word;
+}
+
+h2.Tie {
+  left: 32px;
+  top: 548px;
+}
+img.vector {
+  width: 6px;
+  height: 13px;
+  left: 280px;
+  top: 20px;
+  position: absolute;
+}
+
+article {
+  width: 203px;
+  height: 124px;
+  top: 179px;
+  left: 32px;
+  position: absolute;
+  border-radius: 5px;
+  border: 0.5px #3a94cb solid;
+}
+div.button-contain {
+  width: 203px;
+  height: 124px;
+  top: 179px;
+  left: 32px;
+  position: absolute;
+  border-radius: 5px;
+  border: 0.5px #3a94cb solid;
+  cursor: pointer;
+}
+button.다음 {
+  cursor: pointer;
+  width: 203px;
+  height: 124px;
+  position: absolute;
+  border-radius: 5px;
+  border: 0.5px #3a94cb solid;
+  background-color: transparent;
+}
+p.닉네임 {
+  width: 60px;
+  height: 15px;
+  left: 35px;
+  top: -15px;
+  position: absolute;
+  color: #515151;
+  font-size: 12px;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 16.56px;
+  word-wrap: break-word;
+}
+div.button-contain p.질문 {
+  width: 30px;
+  height: 15px;
+  left: 43px;
+  top: 10px;
+  position: absolute;
+  color: #515151;
+  font-size: 8px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 11.04px;
+  word-wrap: break-word;
+}
+div.button-contain p.icon {
+  width: 36px;
+  height: 36px;
+  left: 0px;
+  top: -25px;
+  position: absolute;
+  color: #515151;
+  font-size: 26px;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 35.88px;
+  word-wrap: break-word;
+}
+p.테그 {
+  width: 150px;
+  height: 15px;
+  left: 75px;
+  top: 10px;
+  text-align: left;
+  position: absolute;
+  color: #999999;
+  font-size: 8px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 11.04px;
+  word-wrap: break-word;
+}
+div.button-contain div.동그라미 {
+  width: 36px;
+  height: 36px;
+  top: 15px;
+  position: absolute;
+  background: #d9d9d9;
+  border-radius: 9999px;
+}
+figcaption {
+  width: 395px;
+  height: 43px;
+  left: 30px;
+  top: 398px;
+  position: absolute;
+}
+div.tag {
+  width: 93px;
+  height: 43px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #8bbbd9;
+  border-radius: 5px;
+}
+p.tag {
+  width: 48px;
+  height: 18px;
+  left: 22px;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 19.32px;
+  word-wrap: break-word;
+}
+p.content {
+  width: 179px;
+  height: 43px;
+  left: 0px;
+  top: 40px;
+  position: absolute;
+  color: #515151;
+  font-size: 9px;
+  font-family: Pretendard;
+  font-weight: 500;
+  line-height: 12.42px;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+section {
+  width: 344px;
+  height: 118px;
+  left: 29px;
+  top: 448px;
+  position: absolute;
+  border-radius: 5px;
+  border: 0.5px #3a94cb solid;
+}
+p.제목 {
+  width: 250px;
+  height: 22px;
+  left: 15px;
+  top: 0px;
+  text-align: left;
+  position: absolute;
+  color: #515151;
+  font-size: 16px;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 22.08px;
+  word-wrap: break-word;
+}
+p.내용 {
+  width: 320px;
+  height: 37px;
+  left: 15px;
+  top: 40px;
+  text-align: left;
+  position: absolute;
+  color: #515151;
+  font-size: 14px;
+  font-family: Pretendard;
+  font-weight: 400;
+  line-height: 19.32px;
+  word-wrap: break-word;
+}
+p.자세히 {
+  width: 100px;
+  height: 12px;
+  left: 15px;
+  top: 85px;
+  text-align: left;
+  position: absolute;
+  color: #9c9c9c;
+  font-size: 8px;
+  font-family: Pretendard;
+  font-weight: 400;
+  line-height: 11.04px;
+  word-wrap: break-word;
+}
+footer {
+  width: 345px;
+  height: 47px;
+  left: 33px;
+  top: 591px;
+  position: absolute;
+}
