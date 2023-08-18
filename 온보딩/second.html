@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../allstyle.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="iphone-frame">
+    <div class="전체">
+      <div class="header">
+        <button id="backicon" onClick="history.back();">
+          <img src="vector-92.svg" />
+        </button>
+        <button id="overicon" onclick="location.href='../home/home.html'">건너뛰기</button>
+      </div>
+      <div class="title">
+        <div class="one">
+          <span id="oneone">2</span>
+          <span id="onetwo">/2</span>
+        </div>
+        <div class="three_ga">사용 중인 SNS를 선택해주세요.</div>
+        <div class="con">콘텐츠 추천의 활용돼요.</div>
+      </div>
+      <div class="sns범위">
+        <div class="유튜브범위">
+          <button class="sns버튼" onclick="toggleButton(this)">
+            <img class="유튜브로고" src="youtube.png" />
+            <div class="sns폰트" style="left: 55px">유튜브</div>
+          </button>
+        </div>
+        <div class="인스타범위">
+          <button class="sns버튼" onclick="toggleButton(this)">
+            <img class="인스타로고" src="insta-3.png" />
+            <div class="sns폰트" style="left: 44px">인스타그램</div>
+          </button>
+        </div>
+        <div class="틱톡범위">
+          <button class="sns버튼" onclick="toggleButton(this)">
+            <img class="틱톡로고" src="tictok.png" />
+            <div class="sns폰트" style="left: 60px; top: 61px">틱톡</div>
+          </button>
+        </div>
+      </div>
+      <div class="선택완료범위">
+        <button class="선택완료버튼" onclick="location.href='../home/home.html'">
+          <div class="선택완료폰트" style="left: 148px">완료</div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function toggleButton(button) {
+      button.classList.toggle("selected");
+    }
+  </script>
+</body>
+
+</html>

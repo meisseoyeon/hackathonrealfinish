@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../allstyle.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="iphone-frame">
+    <div class="전체">
+      <div class="header">
+        <button id="backicon" onClick="history.back();">
+          <img src="vector-92.svg" />
+        </button>
+        <button id="overicon" onclick="location.href='../home/home.html'">건너뛰기</button>
+      </div>
+      <div class="title">
+        <div class="one">
+          <span id="oneone">1</span>
+          <span id="onetwo">/2</span>
+        </div>
+        <div class="three_ga">관심 태그를 3가지 이상 선택해주세요.</div>
+        <div class="con">콘텐츠 추천의 활용돼요.</div>
+      </div>
+      <div class="gwansim">관심 분야</div>
+      <div class="관심분야아래">
+        <div class="정치">
+          <button class="관심분야아래버튼" onclick="toggleButton(this)">
+            <div class="관심분야아래폰트">#정치</div>
+          </button>
+        </div>
+        <div class="경제">
+          <button class="관심분야아래버튼" onclick="toggleButton(this)">
+            <div class="관심분야아래폰트">#경제</div>
+          </button>
+        </div>
+        <div class="환경">
+          <button class="관심분야아래버튼" onclick="toggleButton(this)">
+            <div class="관심분야아래폰트">#환경</div>
+          </button>
+        </div>
+        <div class="인권">
+          <button class="관심분야아래버튼" onclick="toggleButton(this)">
+            <div class="관심분야아래폰트">#인권</div>
+          </button>
+        </div>
+        <div class="사회">
+          <button class="관심분야아래버튼" onclick="toggleButton(this)">
+            <div class="관심분야아래폰트" style="width: 76px; left: 9px; top: 6px">
+              #사회/문화
+            </div>
+          </button>
+        </div>
+        <div class="연예">
+          <button class="관심분야아래버튼" onclick="toggleButton(this)">
+            <div class="관심분야아래폰트">#연예</div>
+          </button>
+        </div>
+        <div class="연애">
+          <button class="관심분야아래버튼" onclick="toggleButton(this)">
+            <div class="관심분야아래폰트">#연애</div>
+          </button>
+        </div>
+        <div class="교육">
+          <button class="관심분야아래버튼" onclick="toggleButton(this)">
+            <div class="관심분야아래폰트">#교육</div>
+          </button>
+        </div>
+        <div class="예술">
+          <button class="관심분야아래버튼" onclick="toggleButton(this)">
+            <div class="관심분야아래폰트">#예술</div>
+          </button>
+        </div>
+        <div class="과학">
+          <button class="관심분야아래버튼" onclick="toggleButton(this)">
+            <div class="관심분야아래폰트">#과학</div>
+          </button>
+        </div>
+        <div class="종교">
+          <button class="관심분야아래버튼" onclick="toggleButton(this)">
+            <div class="관심분야아래폰트">#종교</div>
+          </button>
+        </div>
+        <div class="여행">
+          <button class="관심분야아래버튼" onclick="toggleButton(this)">
+            <div class="관심분야아래폰트">#여행</div>
+          </button>
+        </div>
+      </div>
+      <div class="관심소셜">관심 소셜미디어 콘텐츠</div>
+      <div class="관심소셜아래">
+        <button class="관심소셜아래버튼" style="width: 81px; height: 36px; left: 7px; top: 0px" onclick="toggleButton(this)">
+          <div class="관심소셜아래폰트" style="width: 65px; left: 9px; top: 7px">
+            #브이로그
+          </div>
+        </button>
+        <button class="관심소셜아래버튼" style="width: 80px; height: 36px; left: 100px; top: 0px" onclick="toggleButton(this)">
+          <div class="관심소셜아래폰트" style="width: 52px; left: 14px; top: 7px">
+            #인터뷰
+          </div>
+        </button>
+        <button class="관심소셜아래버튼" style="width: 61px; height: 36px; left: 189px; top: 0px" onclick="toggleButton(this)">
+          <div class="관심소셜아래폰트" style="width: 44px; left: 9px; top: 7px">
+            #공부
+          </div>
+        </button>
+        <button class="관심소셜아래버튼" style="width: 37px; height: 36px; left: 259px; top: 0px" onclick="toggleButton(this)">
+          <div class="관심소셜아래폰트" style="width: 26px; left: 6px; top: 7px">
+            #일
+          </div>
+        </button>
+        <button class="관심소셜아래버튼" style="width: 81px; height: 36px; left: 0px; top: 50px" onclick="toggleButton(this)">
+          <div class="관심소셜아래폰트" style="width: 65px; left: 7px; top: 7px">
+            #정보전달
+          </div>
+        </button>
+        <button class="관심소셜아래버튼" style="width: 80px; height: 36px; left: 93px; top: 50px" onclick="toggleButton(this)">
+          <div class="관심소셜아래폰트" style="width: 59px; left: 10px; top: 7px">
+            #ASMR
+          </div>
+        </button>
+        <button class="관심소셜아래버튼" style="width: 61px; height: 36px; left: 182px; top: 50px" onclick="toggleButton(this)">
+          <div class="관심소셜아래폰트" style="width: 44px; left: 9px; top: 7px">
+            #먹방
+          </div>
+        </button>
+        <button class="관심소셜아래버튼" style="width: 56px; height: 36px; left: 252px; top: 50px" onclick="toggleButton(this)">
+          <div class="관심소셜아래폰트" style="width: 44px; left: 6px; top: 7px">
+            #코믹
+          </div>
+        </button>
+        <button class="관심소셜아래버튼" style="width: 56px; height: 36px; left: 58px; top: 101px" onclick="toggleButton(this)">
+          <div class="관심소셜아래폰트" style="width: 44px; left: 6px; top: 7px">
+            #그림
+          </div>
+        </button>
+        <button class="관심소셜아래버튼" style="width: 105px; height: 36px; left: 123px; top: 100px"
+          onclick="toggleButton(this)">
+          <div class="관심소셜아래폰트" style="width: 96px; left: 5px; top: 7px">
+            #플레이리스트
+          </div>
+        </button>
+      </div>
+      <div class="선택완료범위">
+        <button class="선택완료버튼" onclick="location.href='second.html'">
+          <div class="선택완료폰트">선택완료</div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function toggleButton(button) {
+      button.classList.toggle("selected");
+    }
+  </script>
+</body>
+
+</html>
